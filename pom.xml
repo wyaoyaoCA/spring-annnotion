@@ -15,6 +15,7 @@
         <module>00-spring-annnotion-common</module>
         <module>03-spring-annnotion-componentScan</module>
         <module>04-spring-annotion-bean</module>
+        <module>05-spring-annnotion-import</module>
     </modules>
 
     <properties>
