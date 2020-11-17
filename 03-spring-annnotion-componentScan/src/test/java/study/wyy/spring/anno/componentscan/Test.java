@@ -3,6 +3,7 @@ package study.wyy.spring.anno.componentscan;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import study.wyy.spring.anno.componentscan.config.*;
 import study.wyy.spring.anno.componentscan.service.AddressService;
+import study.wyy.spring.anno.componentscan.service.MyNode;
 import study.wyy.spring.anno.componentscan.service.UserService;
 import study.wyy.spring.anno.componentscan.service.dao.UserDao;
 
@@ -70,5 +71,59 @@ public class Test {
         UserService userService2 = context.getBean("userService", UserService.class);
         userService.sayHello();
 
+    }
+
+
+    @org.junit.Test
+    public void test6(){
+        // 1 加载配置类
+        AnnotationConfigApplicationContext context =new AnnotationConfigApplicationContext(SpringConfig5.class);
+
+        UserService userService = context.getBean(UserService.class);
+        userService.sayHello();
+        UserDao userDao = context.getBean(UserDao.class);
+        userDao.saveUser();
+
+    }
+
+    @org.junit.Test
+    public void test7(){
+        // 1 加载配置类
+        AnnotationConfigApplicationContext context =new AnnotationConfigApplicationContext(SpringConfig6.class);
+        UserDao userDao = context.getBean(UserDao.class);
+        userDao.saveUser();
+        UserService userService = context.getBean(UserService.class);
+        userService.sayHello();
+
+    }
+
+    @org.junit.Test
+    public void test8(){
+        // 1 加载配置类
+        AnnotationConfigApplicationContext context =new AnnotationConfigApplicationContext(SpringConfig7.class);
+        UserDao userDao = context.getBean(UserDao.class);
+        userDao.saveUser();
+        UserService userService = context.getBean(UserService.class);
+        userService.sayHello();
+
+        MyNode node = context.getBean(MyNode.class);
+        node.node();
+
+    }
+
+    @org.junit.Test
+    public void test9(){
+        // 1 加载配置类
+        AnnotationConfigApplicationContext context =new AnnotationConfigApplicationContext(SpringConfig8.class);
+        String[] beanDefinitionNames = context.getBeanDefinitionNames();
+        for (String beanName : beanDefinitionNames) {
+            System.out.println("ioc 容器中定义的bean: "+beanName);
+        }
+        AddressService addressService = context.getBean(AddressService.class);
+        addressService.address();
+        UserDao userDao = context.getBean(UserDao.class);
+        userDao.saveUser();
+        UserService userService = context.getBean(UserService.class);
+        userService.sayHello();
     }
 }
