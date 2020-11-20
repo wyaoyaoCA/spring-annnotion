@@ -27,7 +27,9 @@ public class NodeImportSelector implements ImportSelector {
             Properties properties = PropertiesLoaderUtils.loadAllProperties("application.properties");
             String basePackagesStr = properties.getProperty("node.scan.packages");
             basePackages = basePackagesStr.split(",");
-            System.out.println(basePackages);
+            for(String basePackage: basePackages){
+                System.out.println("扫描路径：" + basePackage);
+            }
         } catch (IOException e) {
             e.printStackTrace();
         }
