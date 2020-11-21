@@ -4,10 +4,7 @@ import org.junit.Test;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import study.wyy.spring.anno.common.model.Department;
 import study.wyy.spring.anno.common.model.Person;
-import study.wyy.spring.anno.importer.config.SpringConfig1;
-import study.wyy.spring.anno.importer.config.SpringConfig2;
-import study.wyy.spring.anno.importer.config.SpringConfig3;
-import study.wyy.spring.anno.importer.config.SpringConfig4;
+import study.wyy.spring.anno.importer.config.*;
 import study.wyy.spring.anno.importer.node.MyNode;
 import study.wyy.spring.anno.importer.service.ItemService;
 import study.wyy.spring.anno.importer.service.StoreService;
@@ -79,6 +76,20 @@ public class Test01 {
     @Test
     public void test06(){
         AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(SpringConfig4.class);
+        // 打印容易中的bean定义
+        String[] beanDefinitionNames = context.getBeanDefinitionNames();
+        for (String name:beanDefinitionNames) {
+            System.out.println(name);
+        }
+        System.out.println("=======================");
+        MyNode myNode = context.getBean(MyNode.class);
+        myNode.node();
+
+    }
+
+    @Test
+    public void test07(){
+        AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(SpringConfig5.class);
         // 打印容易中的bean定义
         String[] beanDefinitionNames = context.getBeanDefinitionNames();
         for (String name:beanDefinitionNames) {
