@@ -17,6 +17,7 @@
         <module>04-spring-annotion-bean</module>
         <module>05-spring-annnotion-import</module>
         <module>06-spring-annnotion-propertysource</module>
+        <module>07-spring-annnotion-dependson</module>
     </modules>
 
     <properties>
