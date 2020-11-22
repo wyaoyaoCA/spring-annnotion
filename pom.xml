@@ -20,6 +20,7 @@
         <module>07-spring-annnotion-dependson</module>
         <module>08-spring-annnotion-lazy</module>
         <module>09-spring-annnotion-conditional</module>
+        <module>10-spring-annnotion-profile</module>
     </modules>
 
     <properties>
