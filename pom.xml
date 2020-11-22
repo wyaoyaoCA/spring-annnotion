@@ -19,6 +19,7 @@
         <module>06-spring-annnotion-propertysource</module>
         <module>07-spring-annnotion-dependson</module>
         <module>08-spring-annnotion-lazy</module>
+        <module>09-spring-annnotion-conditional</module>
     </modules>
 
     <properties>
