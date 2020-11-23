@@ -25,6 +25,7 @@
         <module>12-spring-extend-beanfactorypostprocessor</module>
         <module>13-spring-extend-beandefinitionregistrypostprocessor</module>
         <module>14-spring-extend-applicationListener</module>
+        <module>15-spring-extend-smartInitializingSingleton</module>
     </modules>
 
     <properties>
