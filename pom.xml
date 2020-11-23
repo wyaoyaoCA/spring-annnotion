@@ -22,6 +22,7 @@
         <module>09-spring-annnotion-conditional</module>
         <module>10-spring-annnotion-profile</module>
         <module>11-spring-annnotion-beanlifea</module>
+        <module>12-spring-extend-beanfactorypostprocessor</module>
     </modules>
 
     <properties>
