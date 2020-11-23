@@ -23,6 +23,7 @@
         <module>10-spring-annnotion-profile</module>
         <module>11-spring-annnotion-beanlifea</module>
         <module>12-spring-extend-beanfactorypostprocessor</module>
+        <module>13-spring-extend-beandefinitionregistrypostprocessor</module>
     </modules>
 
     <properties>
