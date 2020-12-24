@@ -26,6 +26,7 @@
         <module>13-spring-extend-beandefinitionregistrypostprocessor</module>
         <module>14-spring-extend-applicationListener</module>
         <module>15-spring-extend-smartInitializingSingleton</module>
+        <module>16-proxy-design-pattern</module>
     </modules>
 
     <properties>
