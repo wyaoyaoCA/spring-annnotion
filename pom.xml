@@ -27,6 +27,7 @@
         <module>14-spring-extend-applicationListener</module>
         <module>15-spring-extend-smartInitializingSingleton</module>
         <module>16-proxy-design-pattern</module>
+        <module>17-spring-annnotion-aop-demo</module>
     </modules>
 
     <properties>
