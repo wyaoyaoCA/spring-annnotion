@@ -9,8 +9,8 @@ import org.springframework.stereotype.Component;
  * @date: 2020-12-24 16:01
  * @description:
  */
-@Aspect
-@Component
+//@Aspect
+//@Component
 public class LogUtil {
 
     /*** 通用切入点表达式 */

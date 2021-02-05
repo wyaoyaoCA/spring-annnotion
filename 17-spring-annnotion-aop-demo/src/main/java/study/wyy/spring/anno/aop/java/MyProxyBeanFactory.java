@@ -40,7 +40,7 @@ public class MyProxyBeanFactory {
             @Override
             public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
                 // 执行方法之前进行日志打印
-                logAspect.beforeLog(args);
+                logAspect.beforeLog();
                 try {
                     // 执行方法
                     Object invoke = method.invoke(userService, args);
@@ -49,7 +49,7 @@ public class MyProxyBeanFactory {
                     return invoke;
                 } catch (Exception e) {
                     // 发生异常，打印异常日志
-                    logAspect.afterThrowingLog(e, args);
+                    logAspect.afterThrowingLog();
                     // 把人家的异常接着在跑出去
                     throw e;
                 }
