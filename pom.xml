@@ -33,6 +33,7 @@
         <module>20-spring-annotation-aop-pointcut</module>
         <module>21-spring-annotation-aop-notfiyType</module>
         <module>22-spring-annotation-aop-notfiyType</module>
+        <module>23-spring-annotation-tx</module>
     </modules>
 
     <properties>
