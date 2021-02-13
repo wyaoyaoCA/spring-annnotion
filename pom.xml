@@ -28,6 +28,11 @@
         <module>15-spring-extend-smartInitializingSingleton</module>
         <module>16-proxy-design-pattern</module>
         <module>17-spring-annnotion-aop-demo</module>
+        <module>18-spring-annotation-aop-aspect</module>
+        <module>19-spring-annotation-aop-EnableAspectJAutoProxy</module>
+        <module>20-spring-annotation-aop-pointcut</module>
+        <module>21-spring-annotation-aop-notfiyType</module>
+        <module>22-spring-annotation-aop-notfiyType</module>
     </modules>
 
     <properties>

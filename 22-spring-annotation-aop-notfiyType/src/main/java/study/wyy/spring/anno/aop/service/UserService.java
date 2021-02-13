@@ -2,7 +2,6 @@ package study.wyy.spring.anno.aop.service;
 
 import study.wyy.spring.anno.aop.model.User;
 
-import java.util.List;
 
 /**
  * @author: wyaoyao
@@ -11,9 +10,8 @@ import java.util.List;
  */
 public interface UserService {
 
-    public User save(User user);
+    User save(User user,String id);
 
-    public Boolean update(User user);
+    User save(String user,  String id);
 
-    public void batchSave(List<User> userList);
 }

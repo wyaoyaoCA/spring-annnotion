@@ -13,7 +13,4 @@ public interface UserService {
 
     public User save(User user);
 
-    public Boolean update(User user);
-
-    public void batchSave(List<User> userList);
 }

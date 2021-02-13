@@ -9,18 +9,25 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>15-spring-extend-smartInitializingSingleton</artifactId>
-
+    <artifactId>21-spring-annotation-aop-notfiyType</artifactId>
+    <description>通知类型</description>
 
     <dependencies>
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-context</artifactId>
+            <version>5.1.6.RELEASE</version>
         </dependency>
         <dependency>
-            <groupId>study.wyy</groupId>
-            <artifactId>00-spring-annnotion-common</artifactId>
-            <version>${project.version}</version>
+            <groupId>org.aspectj</groupId>
+            <artifactId>aspectjweaver</artifactId>
+            <version>1.8.13</version>
         </dependency>
+        <dependency>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-classic</artifactId>
+            <version>1.2.3</version>
+        </dependency>
+
     </dependencies>
 </project>

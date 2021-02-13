@@ -9,18 +9,25 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>15-spring-extend-smartInitializingSingleton</artifactId>
-
+    <artifactId>22-spring-annotation-aop-notfiyType</artifactId>
+    <description>获取切入点的形参，返回值，异常</description>
 
     <dependencies>
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-context</artifactId>
+            <version>5.1.6.RELEASE</version>
         </dependency>
         <dependency>
-            <groupId>study.wyy</groupId>
-            <artifactId>00-spring-annnotion-common</artifactId>
-            <version>${project.version}</version>
+            <groupId>org.aspectj</groupId>
+            <artifactId>aspectjweaver</artifactId>
+            <version>1.8.13</version>
         </dependency>
+        <dependency>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-classic</artifactId>
+            <version>1.2.3</version>
+        </dependency>
+
     </dependencies>
 </project>
