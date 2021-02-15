@@ -34,6 +34,7 @@
         <module>21-spring-annotation-aop-notfiyType</module>
         <module>22-spring-annotation-aop-notfiyType</module>
         <module>23-spring-annotation-tx</module>
+        <module>24-spring-mvc-anno-helloworld</module>
     </modules>
 
     <properties>
